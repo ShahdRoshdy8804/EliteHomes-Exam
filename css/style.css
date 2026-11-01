@@ -1413,14 +1413,6 @@ button[type="submit"]:hover{
         font-size: 1.75rem;
     }
 
-    .sec-subtitle::before {
-        left: -45%;
-    }
-
-    .sec-subtitle::after {
-        right: -45%;
-    }
-
     .contact-section {
         padding: 50px 0;
         background-size:
