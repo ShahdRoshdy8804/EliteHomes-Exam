@@ -1145,68 +1145,326 @@ button[type="submit"]:hover{
     margin: 1.5rem 0;
 }
 
-@media (max-width: 576px) {
-    .mobile-menu {
-        width: 90% !important;
-    }
 
-    .mobile-mega-content .col3 {
-        grid-template-columns: 1fr;
-    }
-
-    .mobile-mega-content .col2-list {
-        grid-template-columns: 1fr;
-    }
-}
+/* ================= Responsive ================= */
 
 @media (max-width: 992px) {
+
+    .container {
+        width: 90%;
+    }
+
     .property-search-content {
         gap: 30px;
         padding: 30px 20px;
     }
+
     .pro-title {
         font-size: 29px;
     }
+
     .service-img img {
         height: 350px;
     }
+
+    .section-caption {
+        max-width: 75%;
+    }
+
+    .accordion .container {
+        width: 85%;
+    }
+
+    .our-services-sec,
+    .client-story-sec {
+        padding: 75px 0;
+    }
+
+    .contact-section .container {
+        padding: 35px 0;
+    }
 }
 
+/* ================= Tablet ================= */
+
 @media (max-width: 768px) {
+
+    .container {
+        width: 92%;
+    }
+
     .property-search-content {
         flex-direction: column;
         align-items: stretch;
-        padding: 30px 20px;
+        gap: 35px;
+        padding: 30px 20px 45px;
     }
+
     .left-div,
     .right-div {
         max-width: 100%;
         width: 100%;
     }
+
     .pro-title {
         font-size: 28px;
+        margin-bottom: 16px;
+        line-height: 1.3;
     }
+
     .pro-title-description {
         font-size: 17px;
+        line-height: 1.6;
+        margin-bottom: 25px;
     }
+
+    .step-item {
+        gap: 20px;
+    }
+
+    .info-box {
+        gap: 13px;
+    }
+
+    .info-box-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        font-size: 20px;
+    }
+
     .info-box-p h5 {
         font-size: 19px;
+        margin-bottom: 7px;
     }
+
     .info-box-p p {
         font-size: 15px;
+        line-height: 1.5;
     }
+
+    .service-btn {
+        margin-top: 25px;
+    }
+
     .service-img {
-        margin-top: 20px;
+        margin: 15px 10px 25px;
     }
+
     .service-img img {
         height: 300px;
-    }
-    .presentage {
-        left: 10px;
-        bottom: -20px;
-    }
-    .service-btn button {
         width: 100%;
+        object-fit: cover;
+    }
+
+    .presentage {
+        padding: 12px 16px;
+    }
+
+    .section-caption {
+        max-width: 90%;
+        font-size: 1rem !important;
+    }
+
+    .section-main-title {
+        font-size: 2rem;
+    }
+
+    .our-services-sec,
+    .client-story-sec {
+        padding: 65px 0;
+    }
+
+    .contact-section {
+        padding: 65px 0;
+    }
+
+    .contact-section .container {
+        padding: 30px 0;
+    }
+
+    .contact-section .container .content {
+        padding: 20px;
+    }
+
+    .accordion .container {
+        width: 92%;
+    }
+
+    .accordion-item {
+        padding: 8px 3px;
+        margin-bottom: 15px;
+    }
+
+    .accordion-button {
+        font-size: 1rem !important;
+        padding: 14px;
     }
 }
 
+/* ================= Mobile ================= */
+
+@media (max-width: 576px) {
+
+    .mobile-menu {
+        width: 90% !important;
+    }
+
+    .mobile-mega-content .col3,
+    .mobile-mega-content .col2-list {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .property-search-content {
+        padding: 25px 15px 40px;
+        gap: 30px;
+    }
+
+    .pro-title {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .pro-title-description {
+        font-size: 15px;
+        line-height: 1.55;
+        margin-bottom: 22px;
+    }
+
+    .step-item {
+        gap: 18px;
+    }
+
+    .info-box {
+        gap: 11px;
+    }
+
+    .info-box-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+        font-size: 18px;
+    }
+
+    .info-box-p h5 {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+
+    .info-box-p p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .service-btn {
+        margin-top: 22px;
+    }
+
+    .service-btn button {
+        width: 100%;
+        padding: 13px 20px !important;
+        font-size: 15px;
+    }
+
+    .service-img {
+        margin: 15px 5px 25px;
+    }
+
+    .service-img img {
+        height: 240px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .service-img .presentage.badge-left {
+        left: -5px;
+        bottom: -15px;
+    }
+
+    .service-img .presentage.badge-right {
+        right: -5px;
+        bottom: -15px;
+    }
+
+    .presentage {
+        padding: 10px 13px !important;
+    }
+
+    .presentage h3 {
+        font-size: 23px;
+    }
+
+    .presentage span {
+        font-size: 12px;
+    }
+
+    .section-caption {
+        max-width: 100%;
+        padding: 0 12px;
+        font-size: 0.95rem !important;
+        line-height: 1.6;
+    }
+
+    .section-main-title {
+        font-size: 1.75rem;
+    }
+
+    .sec-subtitle::before {
+        left: -45%;
+    }
+
+    .sec-subtitle::after {
+        right: -45%;
+    }
+
+    .contact-section {
+        padding: 50px 0;
+        background-size:
+            100px 100px,
+            210px 210px,
+            100px 100px,
+            210px 210px;
+
+        background-position:
+            right 35px top 35px,
+            right -90px top -75px,
+            left 35px bottom 35px,
+            left -90px bottom -75px;
+    }
+
+    .contact-section .container {
+        padding: 25px 0;
+    }
+
+    .contact-section .container .content {
+        padding: 18px;
+    }
+
+    .our-services-sec,
+    .client-story-sec {
+        padding: 50px 0;
+    }
+
+    .accordion .container {
+        width: 100%;
+    }
+
+    .accordion-item {
+        margin-bottom: 12px;
+    }
+
+    .accordion-button {
+        font-size: 0.9rem !important;
+        padding: 12px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+        line-height: 1.6;
+        padding: 12px;
+    }
+}
